@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Indenização de Voo</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<!--inject:css-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--endinject-->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88106023-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'AW-816699907');
+	</script>
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '594512767753137');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=594512767753137&ev=PageView&noscript=1"/></noscript>
+		
+		<!-- End Facebook Pixel Code -->
+		
+		<!-- Google Analytics Code -->
+		
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-88106023-3', 'auto');
+			ga('send', 'pageview');
+			
+		</script>
+		
+		<!-- End Google Analytics Code -->
+		
+	</head>
+	<body>
+		
+		<div class="topbar">
+			<div class="container">
+				<a href="https://e-consumidores.club/">
+					<img src="img/logo-econsumidores.png" alt="e-consumidores">
+				</a>
+			</div>
+		</div>
+		
+		
+		<header class="page page__header page__header--active page__header--app">
+			<div class="container">
+				<a href="https://e-consumidores.club/indenizacao-de-voo/">
+					<img src="img/logo.png" alt="Indenização de Voo" class="mx-auto d-block logo--header">	
+				</a>
+			</div>
+		</header>
+		
+		<main class="page bg-woman">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-lg-5">
+						
+					</div>
+					
+					<div class="col-lg-7 text-center pt-5">
+						<h3 class="app__title">Problemas com seu voo?</h3>
+						<p class="app__paragraph mt-3">Você pode receber até <span class="font-weight-bold color--off">R$ 20 mil</span> por voo atrasado, voo cancelado, overbooking ou problemas com sua bagagem, como extravio.</p>
+						
+						<div class="question mt-5">
+							<h3 class="h5 font-weight-light">Qual problema aconteceu com você?</h3>
+							<div class="row d-flex justify-content-center mt-4">
+								
+								<div id="flight" class="answer__content--problem">
+									<i class="fas fa-5x fa-plane answer__icon"></i>
+									<p class="answer__text">
+										Atraso ou <br>cancelamento <br>de voo
+									</p>
+								</div>	
+								
+								<div id="luggage" class="answer__content--problem">
+									<i class="fas fa-5x fa-suitcase-rolling answer__icon"></i>
+									<p class="answer__text">
+										Bagagem <br>Extraviada
+									</p>
+								</div>	
+								
+								<div id="overbooking" class="answer__content--problem">
+									<i class="fas fa-5x fa-users answer__icon"></i>
+									<p class="answer__text">
+										Overbooking <br>(fui impedido de <br>realizar a viagem)
+									</p>
+								</div>
+								
+								<input type="hidden" id="problem">
+								
+							</div>
+							
+							<a href="#" id="btnNextProblem" class="btn btn--main mt-2">Avançar</a>	
+							<p id="error-btn" class="rounded text-danger mb-0 mt-4 font-weight-normal alert alert-danger" style="display: none">Um ou mais campos estao em branco</p>
+						</div>
+					</div>
+				</div>
+			</main>
+			
+			<!--inject:js-->
+			<script src="js/scripts.js"></script>
+			<!--endinject-->
+		</body>
+		</html>

@@ -1,0 +1,11 @@
+
+#tabela {
+	padding-top: 40px;
+}
+.invisivel{
+	display: none;
+}
+
+#erro-ajax {
+	color: red;
+}

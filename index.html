@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Busca CEPs</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- coloca a tela conforme tamanho do device -->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<section class="container">
+			<header>
+				<div class="container">
+					<h1 class="titulo">Busca de CEPs</h1>
+				</div>
+			</header>
+		</section>
+		<main>
+			<section class="container">
+				<ul id="mensagens-erro"> <!-- aqui entra as li com msg de erro-->				
+				</ul>
+
+				<form id="form-adiciona" class="form-inline">
+					<div class="form-group mx-sm-3 mb-2">
+					    <label for="cep" class="col-sm-2 col-form-label">CEP</label>
+					    <input id="cep" type="text" class="form-control" placeholder="Digite seu CEP">
+					</div>
+					<button id="buscar-cep" type="submit" class="btn btn-primary mb-2">Buscar CEP</button>
+				</form>
+				<span id="erro-ajax" class="invisivel">O CEP é inválido. Digite um CEP válido</span>
+			</section>
+
+			<section id="tabela" class="container">
+				<table class="table">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">CEP</th>
+							<th scope="col">Logradouro</th>
+							<th scope="col">Complemento</th>
+							<th scope="col">Bairro</th>
+							<th scope="col">Cidade</th>
+							<th scope="col">UF</th>
+							<th scope="col">Unidade</th>
+							<th scope="col">IBGE</th>
+							<th scope="col">GIA</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-cep">
+						<!-- aqui entrará a linha com o resultado da consulta-->
+					</tbody>
+				</table>		
+			</section>
+
+		</main>
+			
+		<script src="js/busca-cep.js"></script>
+		<!-- <script src="bootstrap4/js/bootstrap.js"></script>   -->
+	</body>
+</html>
